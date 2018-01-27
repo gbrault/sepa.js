@@ -10,7 +10,7 @@ It will work in the browser or using node.js. To use it in the browser, just
 include it via script-tag and access through the `SEPA` variable. There are a
 few examples below.
 
-You can also try the [live online generator](http://kewisch.github.io/sepa.js/examples/web.html).
+You can also try the [live online generator](http://kewisch.github.io/sepa.js/examples/web.html).or [here](https://rawgit.com/gbrault/sepa.js/master/examples/web.html)
 If you are worried about account number safety, be assured that everything is
 calculated client side. Check the source code if you don't trust me.
 
