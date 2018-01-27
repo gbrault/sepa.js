@@ -34,11 +34,11 @@
           <h1>Group Header</h1>
           <div>
             <label for="grpHdr-id">Message ID</label>
-            <input type="text" id="grpHdr-id" required maxlength="35">
+            <input type="text" id="grpHdr-id" required maxlength="35" value="XMPL.20140201.TR0">
           </div>
           <div>
             <label for="grpHdr-initiatorName">Initiator</label>
-            <input type="text" id="grpHdr-initiatorName" required maxlength="70">
+            <input type="text" id="grpHdr-initiatorName" required maxlength="70" value="Example LLC">
           </div>
         </div>
 
@@ -50,19 +50,19 @@
           </div>
           <div>
             <label for="info-creditorIBAN">Creditor IBAN</label>
-            <input type="text" id="info-creditorIBAN" required onchange="validateIBAN(event)">
+            <input type="text" id="info-creditorIBAN" required onchange="validateIBAN(event)" value="DE87123456781234567890">
           </div>
           <div>
             <label for="info-creditorBIC">Creditor BIC</label>
-            <input type="text" id="info-creditorBIC" required pattern="([A-Za-z0-9]{8}|[A-Za-z0-9]{11})">
+            <input type="text" id="info-creditorBIC" required pattern="([A-Za-z0-9]{8}|[A-Za-z0-9]{11})" value="XMPLDEM0XXX">
           </div>
           <div>
             <label for="info-creditorId">Creditor ID</label>
-            <input type="text" id="info-creditorId" required onchange="validateCID(event)">
+            <input type="text" id="info-creditorId" required onchange="validateCID(event)" value="DE98ZZZ09999999999">
           </div>
           <div>
             <label for="info-collectionDate">Collection Date</label>
-            <input type="date" id="info-collectionDate" maxlength="10">
+            <input type="date" id="info-collectionDate" maxlength="10" value="10/31/2019">
           </div>
         </div>
 
@@ -70,31 +70,31 @@
           <h1>Transaction Information</h1>
           <div>
             <label for="tx-debitorName">Debitor Name</label>
-            <input type="text" id="tx-debitorName" required maxlength="70">
+            <input type="text" id="tx-debitorName" required maxlength="70" value="Example Customer">
           </div>
           <div>
             <label for="tx-debitorIBAN">Debitor IBAN</label>
-            <input type="text" id="tx-debitorIBAN" required onchange="validateIBAN(event)">
+            <input type="text" id="tx-debitorIBAN" required onchange="validateIBAN(event)" value="DE40987654329876543210">
           </div>
           <div>
             <label for="tx-debitorBIC">Debitor BIC</label>
-            <input type="text" id="tx-debitorBIC" required pattern="([A-Za-z0-9]{8}|[A-Za-z0-9]{11})">
+            <input type="text" id="tx-debitorBIC" required pattern="([A-Za-z0-9]{8}|[A-Za-z0-9]{11})" value="CUSTDEM0XXX">
           </div>
           <div>
             <label for="tx-mandateId">Mandate Id</label>
-            <input type="text" id="tx-mandateId" required maxlength="35" pattern="([A-Za-z0-9]|[\+|\?|/|\-|:|\(|\)|\.|,|']){1,35}">
+            <input type="text" id="tx-mandateId" required maxlength="35" pattern="([A-Za-z0-9]|[\+|\?|/|\-|:|\(|\)|\.|,|']){1,35}" value="XMPL.CUST487.2014">
           </div>
           <div>
             <label for="tx-mandateSignatureDate">Signature Date</label>
-            <input type="date" id="tx-mandateSignatureDate" maxlength="10">
+            <input type="date" id="tx-mandateSignatureDate" maxlength="10" value="10/31/2019">
           </div>
           <div>
             <label for="tx-amount">Amount</label>
-            <input type="number" id="tx-amount" min="0" step="0.01" required>
+            <input type="number" id="tx-amount" min="0" step="0.01" required value="56.32">
           </div>
           <div>
             <label for="tx-remittanceInfo">Remittance Info</label>
-            <input type="text" id="tx-remittanceInfo" required maxlength="140">
+            <input type="text" id="tx-remittanceInfo" required maxlength="140" value="Invoice 54">
           </div>
           <input type="submit" value="Create XML">
         </div>
