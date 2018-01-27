@@ -35,8 +35,7 @@ function process() { // eslint-disable-line no-unused-vars
   var hdr = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
   //document.getElementById('results').textContent =  hdr + '\n' + vkbeautify.xml(doc.toString(), '  ');
   var results = document.getElementById('results');
-  results.src = 'data:text/xml,' + hdr + doc.toString();
-  results.style.display = 'block';
+  results.innerHTML = '<pre>' + hdr + doc.toString() + '</pre>';
   results.style.height = (document.body.scrollHeight - 40) + 'px';
 }
 
