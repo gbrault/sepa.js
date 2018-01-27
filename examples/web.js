@@ -33,7 +33,8 @@ function process() { // eslint-disable-line no-unused-vars
   info.addTransaction(tx);
 
   var hdr = '&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;';
-  document.getElementById('results').innerHTML = '<pre>' + hdr + '\n' + vkbeautify.xml(doc.toString(), '  ') +'<pre>';
+  document.getElementById('results').innerHTML = '<pre><div id="innerresults"/><pre>';
+  document.getElementById('innerresults').innerText= hdr + '\n' + vkbeautify.xml(doc.toString(), '  ');
   results.style.height = (document.body.scrollHeight - 40) + 'px';
 }
 
