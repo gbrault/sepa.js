@@ -33,11 +33,7 @@ function process() { // eslint-disable-line no-unused-vars
   info.addTransaction(tx);
 
   var hdr = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
-  //document.getElementById('results').textContent =  hdr + '\n' + vkbeautify.xml(doc.toString(), '  ');
-  var results = document.getElementById('results');
-  results.innerHTML = '<pre><div id="innerresults"></div></pre>';
-  var innerresults = document.getElementById('innerresults');
-  innerresults.innerText = hdr + doc.toString();
+  document.getElementById('results').textContent =  hdr + '\n' + vkbeautify.xml(doc.toString(), '  ');
   results.style.height = (document.body.scrollHeight - 40) + 'px';
 }
 
